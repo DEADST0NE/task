@@ -3,4 +3,24 @@
   line-height: 50px !important;
   display: flex;
   align-items: center;
+
+  .btn-sign-in {
+    border: 0;
+    background-color: #ffffff00;
+    color: #eeefe9;
+    font-size: 13px;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .btn-sign-up {
+    background-color: #ffffff00;
+    border-color: #eeefe9;
+    color: #eeefe9;
+    &:hover {
+      background-color:#eeefe9;
+      color: black;
+    }
+  } 
 }
