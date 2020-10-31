@@ -1,0 +1,23 @@
+.sigIn { 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  background: linear-gradient(66deg, #b484d8, #f79b9b);
+  &-conteiner { 
+    width: 400px;
+    background-color: #fff;
+    border-radius: 0.6rem;
+    &-title {
+      display: block;
+      font-size: 40px;
+      font-family: Poppins;
+      font-weight: 700;
+      color: #333333;
+      text-align: center;
+    }
+  }
+  &-content {
+
+  }
+}

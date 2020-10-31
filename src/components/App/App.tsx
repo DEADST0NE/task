@@ -1,34 +1,26 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Header from '../Header';
-
-import NotFoundPage from '../../pages/not-found-page';
-import WelcomePage from '../../pages/welcome-page';
-import Footer from '../Footer';
+import Pages from '../../pages/index'
+import Auth from '../SignIn';
 
 import './App.scss';
 
 const App: React.FC = () => {
   return (
-    <>
-    <Header />
+    <> 
       <Router>
         <Switch>
-          <Route path="/login" exact>
-            Авторизация
+          <Route path="/auth" exact>
+            <Auth />
           </Route>
 
-          <Route path="/welcome">
-            <WelcomePage />
+          <Route path="/">
+            <Pages />
           </Route>
 
-          <Route>
-            <NotFoundPage />
-          </Route>
         </Switch>
-      </Router> 
-      <Footer />
+      </Router>  
     </>
   );
 }
