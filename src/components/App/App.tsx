@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Pages from '../../pages/index'
-import Auth from '../SignIn';
+import AuthPages from '../auth'; 
 
 import './App.scss';
 
@@ -11,9 +11,7 @@ const App: React.FC = () => {
     <> 
       <Router>
         <Switch>
-          <Route path="/auth" exact>
-            <Auth />
-          </Route>
+          <AuthPages />
 
           <Route path="/">
             <Pages />

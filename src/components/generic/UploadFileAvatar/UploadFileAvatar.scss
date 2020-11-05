@@ -1,0 +1,46 @@
+.upload-file-avatar { 
+  display: flex;
+  justify-content: center;
+  margin: 0 auto; 
+  label {
+    background-color: #d4d4d47d;
+    padding: 20px 23px;
+    border-radius: 50%; 
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      .download-file { 
+        display: block;
+      }
+    }
+    .download-file {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #00000091;
+      padding: 20px 23px;
+      border-radius: 50%; 
+    }
+    img {
+      width: 105px;
+      height: 105px;
+      border-radius: 50%;
+    }
+  }
+  svg { 
+    width: 60px;
+    height: 60px;
+    color:  #fff;
+  }
+}
+
+.p-0 {
+  padding: 0px !important;
+}
+
+.d-none {
+  display: none !important;
+}
+

@@ -1,5 +1,6 @@
 import React from 'react' 
 import { Form, Input, Button } from 'antd';
+import { LoginOutlined } from '@ant-design/icons';
 
 type value = { 
   email: string;
@@ -12,7 +13,10 @@ const FormSignIn: React.FC = () => {
   };  
   return (
     <Form
-      name="basic"
+      name="signIn"
+      className="signIn-form"
+      layout="vertical"
+      requiredMark={false}
       initialValues={{}}
       onFinish={onFinish}
     >
@@ -22,7 +26,7 @@ const FormSignIn: React.FC = () => {
         rules={[
           {
             required: true,
-            message: 'Please input your username!',
+            message: 'Пожалуйста введите свой Email',
           },
         ]}
       >
@@ -30,21 +34,21 @@ const FormSignIn: React.FC = () => {
       </Form.Item>
 
       <Form.Item
-        label="Password"
+        label="Пароль"
         name="password"
         rules={[
           {
             required: true,
-            message: 'Please input your password!',
+            message: 'Пожалуйста введите свой пароль',
           },
         ]}
       >
         <Input.Password />
       </Form.Item> 
 
-      <Form.Item>
-        <Button type="primary" htmlType="submit">
-          Submit
+      <Form.Item className="submit-content">
+        <Button type="ghost" htmlType="submit" icon={<LoginOutlined />}>
+          Sign in
         </Button>
       </Form.Item>
     </Form>

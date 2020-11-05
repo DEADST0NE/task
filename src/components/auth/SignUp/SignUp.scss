@@ -1,0 +1,122 @@
+.signUp { 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  background: linear-gradient(66deg, #232323, #da90b3);
+  &-conteiner{
+    display: flex;
+  }
+  &-left-conteiner {
+    width: 360px;
+    background-color: #fff;
+    border-radius: 0.6rem 0 0 0.6rem;
+    padding: 3rem 0rem 3rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo-title {
+      display: block;
+      line-height: 36px;
+      font-size: 60px;
+      font-family: Poppins;
+      font-weight: 700;
+      color: #333333;
+      text-align: center;
+    }
+    .logo { 
+      text-align: center;
+      width: 300px;
+      height: 300px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  }
+  &-right-conteiner { 
+    width: 470px;
+    background-color: #fff;
+    border-radius: 0 0.6rem 0.6rem 0;
+    padding: 3rem 5rem 2rem;
+  }
+  &-content-header {
+    .logo-title {
+      display: block;
+      line-height: 36px;
+      font-size: 35px;
+      font-family: Poppins;
+      font-weight: 700;
+      color: #333333;
+      text-align: center;
+    }
+    .logo { 
+      text-align: center;
+      width: 150px;
+      height: 150px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  }
+  &-content-body {
+    .signUp-other-services {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0px 0px;
+      button {
+        border-radius: 50px;
+        width: auto;
+        height: auto;
+        padding: 8px;
+        line-height: 0px;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+        &:last-child{
+          margin-left: 20px;
+        }
+      }
+    } 
+    .signUp-form {
+      .ant-form-item-label{
+        padding: 0 0 1px;
+      }
+      .ant-input-password {
+        input {
+          height: 30px
+        }
+      }
+      .ant-input {
+        height: 40px
+      } 
+      .submit-content {
+        .ant-form-item-control-input-content {
+          display: flex;
+          justify-content: center;
+          button {
+            display: flex;
+            align-items: center;
+            border-radius: 3px;
+            font-family: Poppins;
+            font-weight: 500;
+          }
+        } 
+      }
+    }
+  }
+  &-content-footer { 
+    button {
+      display: block;
+      margin: 0 auto;
+      text-align: center; 
+    }
+    a {
+      display: block;
+      margin: 0 auto;
+      text-align: center; 
+      width: fit-content;
+    }
+  }
+}
