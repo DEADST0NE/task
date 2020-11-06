@@ -29,39 +29,7 @@
       margin-bottom: 15px;
     }
   }
-  &-content-body {
-    .signIn-other-services {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 15px 0px 0px;
-      button {
-        border-radius: 50px;
-        width: auto;
-        height: auto;
-        padding: 8px 10px;
-        line-height: 0px;
-        svg {
-          width: 30px;
-          height: 30px;
-        }
-        &:last-child{
-          margin-left: 20px;
-        }
-      }
-      a {
-        border-radius: 50px;
-        width: auto;
-        height: auto;
-        padding: 8px 10px;
-        line-height: 0px;
-        margin-left: 20px;
-        svg {
-          width: 30px;
-          height: 30px;
-        } 
-      }
-    } 
+  &-content-body { 
     .signIn-form {
       .ant-form-item-label{
         padding: 0 0 1px;

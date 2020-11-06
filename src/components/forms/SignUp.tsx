@@ -2,8 +2,6 @@ import React from 'react'
 import { Form, Input, Button } from 'antd';
 import { LoginOutlined } from '@ant-design/icons';
 
-import UploadFileAvatar from '../generic/UploadFileAvatar';
-
 type value = { 
   email: string;
   password: string;
@@ -26,10 +24,6 @@ const FormSignUp: React.FC = () => {
       initialValues={{}}
       onFinish={onFinish}
     >
-      <Form.Item>
-        <UploadFileAvatar />
-      </Form.Item>
-      
       <Form.Item
         label="Email" 
         name="email" 

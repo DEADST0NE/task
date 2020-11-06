@@ -1,1 +1,1 @@
-export const githubClientId = 'fb405bc74b89b50607d1';
+export const API_URL = 'http://localhost:3001/api/';
