@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import SignIn from './SignIn';
 import SignUp from './SignUp';
 import PasswordRecovery from './PasswordRecovery';
 
-const AuthPages: React.FC = () => {
+const AuthPages: FC = () => {
   return (
     <> 
       <Router>

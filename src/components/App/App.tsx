@@ -1,22 +1,28 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React, {FC} from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; 
 
+import PrivateRoute from '../generic/PrivateRoute';
 import Pages from '../../pages/index'
 import AuthPages from '../auth'; 
+import NotFoundPage from '../../pages/not-found-page';
 
 import './App.scss';
 
-const App: React.FC = () => {
+const App: FC = () => { 
   return (
     <> 
       <Router>
         <Switch>
-          <AuthPages />
-
-          <Route path="/">
+          
+          <AuthPages /> 
+          
+          <PrivateRoute>
             <Pages />
-          </Route>
+          </PrivateRoute>
 
+          <Route>
+            <NotFoundPage />
+          </Route>
         </Switch>
       </Router>  
     </>

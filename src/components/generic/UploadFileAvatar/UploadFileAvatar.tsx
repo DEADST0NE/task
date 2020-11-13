@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, FC } from 'react';
 import { Input } from 'antd';
 import { UserOutlined, DownloadOutlined } from '@ant-design/icons';
 
 import './UploadFileAvatar.scss';
 
-const UploadFileAvatar: React.FC<{ initial?: File }> = ({ initial = null }) => {
+const UploadFileAvatar: FC<{ initial?: File }> = ({ initial = null }) => {
 
   const [file, setFile] = useState(initial);
   console.log(file);

@@ -1,11 +1,11 @@
-import React from 'react';  
+import React, { FC } from 'react';  
 import { Button } from 'antd';
 
 import logo from '../../../images/logo.svg';
 import SignInForm from '../../forms/SignIn'
 import './SignIn.scss';
 
-const SignIn: React.FC = () => {
+const SignIn: FC = () => {
   return ( 
     <div className="signIn">  
       <div className="signIn-conteiner">

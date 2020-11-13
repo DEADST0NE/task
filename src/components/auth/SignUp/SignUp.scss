@@ -4,41 +4,12 @@
   align-items: center; 
   height: 100vh;
   background: linear-gradient(66deg, #232323, #da90b3);
-  &-conteiner{
-    display: flex;
-  }
-  &-left-conteiner {
+  &-conteiner{ 
     width: 360px;
     background-color: #fff;
-    border-radius: 0.6rem 0 0 0.6rem;
-    padding: 3rem 0rem 3rem 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .logo-title {
-      display: block;
-      line-height: 36px;
-      font-size: 60px;
-      font-family: Poppins;
-      font-weight: 700;
-      color: #333333;
-      text-align: center;
-    }
-    .logo { 
-      text-align: center;
-      width: 200px;
-      height: 200px;
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 15px;
-    }
-  }
-  &-right-conteiner { 
-    width: 470px;
-    background-color: #fff;
-    border-radius: 0 0.6rem 0.6rem 0;
-    padding: 3rem 5rem 2rem;
-  }
+    border-radius: 0.6rem;
+    padding: 3rem 3rem 2rem; 
+  } 
   &-content-header {
     .logo-title {
       display: block;

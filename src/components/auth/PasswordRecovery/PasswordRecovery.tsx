@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Button } from 'antd'; 
 
 import logo from '../../../images/logo.svg';
 import FormPasswordRecovery from '../../forms/PasswordRecovery'
 import './PasswordRecovery.scss';
 
-const PasswordRecovery: React.FC = () => {
+const PasswordRecovery: FC = () => {
   return ( 
     <div className="password-recovery">  
       <div className="password-recovery-conteiner">
